@@ -1,0 +1,7 @@
+Beginning with Android 14 (API level 34), when you
+launch a foreground service, the system checks for specific prerequisites
+ based on service type. For example, if you try to launch a foreground service of type location, the system checks to make sure your app already has either the ACCESS_COARSE_LOCATION or ACCESS_FINE_LOCATION permission. If it doesn't, the system throws SecurityException.
+For this reason, you must confirm that the required prerequisites are met
+before you start a foreground service. The foreground service type
+documentation lists the required prerequisites for each foreground
+service type.
